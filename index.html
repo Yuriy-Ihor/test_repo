@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Test</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div style="position: absolute; top: 100px; left: 50px">
+        <button class="favorite styled"
+        type="button" onclick="fuck()">
+    Add to favorites
+    </button>
+    </div>
+    <div style="position: absolute; top: 100px; left: 50px">
+        <button class="favorite styled"
+        type="button" onclick="fuck()">
+    Add to favorites
+    </button>
+    </div>
+    <button class="favorite styled"
+        type="button" onclick="fuck()">
+    Add to favorites
+    </button>
+
+    <input class="favorite styled"
+        type="button" onclick="fuck()" value="input" />
+
+    <script>
+        function fuck() {
+            let newDiv = document.createElement('div');
+            newDiv.setAttribute('style', 'color: #fff');
+            newDiv.innerText = "clicked";
+            document.body.appendChild(newDiv);
+        }
+    </script>
+    
+</body>
+</html> 
